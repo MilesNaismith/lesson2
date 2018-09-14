@@ -4,10 +4,13 @@ def compare_strings(string1, string2):
     else:
         if string1 == string2:
             return 1
-        elif string2 == 'learn':
-            return 3
         elif len(string1) > len(string2):
-            return 2
+            if string2 == 'learn':
+                return 3
+            else:  
+                return 2
+        elif string2 == 'learn':
+            return 3    
         
-cs = compare_strings(13,'13')
+cs = compare_strings('13123123123','learn')
 print(cs)            
