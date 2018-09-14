@@ -4,14 +4,15 @@ def ask_user():
                   'Где бы ты хотел работать?': 'В Aperture Science', 
                   'Что делаешь?':'Программирую', 
                   'Кем бы ты хотел стать?':'ОБЧР(Огромным Боевым Человекоподобным Роботом)',
-                 }
-    try:              
-        while True:
+                  }
+    while True:
+        try:
             frase = input('Человек: ')
-            if frase in vocabulary:
-                print('Программа: ' + vocabulary[frase])
-            else:
-                print('Программа: Я тебя не понимаю, попробуй сформулировать свой вопрос иначе')   
-    except KeyboardInterrupt:
-        print('Пока!')
+        except(KeyboardInterrupt):
+            print('Пока!')
+            break    
+        if frase in vocabulary:
+            print('Программа: ' + vocabulary[frase])
+        else:
+            print('Программа: Я тебя не понимаю, попробуй сформулировать свой вопрос иначе')   
 ask_user()
