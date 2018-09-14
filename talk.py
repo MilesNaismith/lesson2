@@ -12,6 +12,6 @@ def ask_user():
                 print('Программа: ' + vocabulary[frase])
             else:
                 print('Программа: Я тебя не понимаю, попробуй сформулировать свой вопрос иначе')   
-    except(KeyboardInterrupt):
+    except KeyboardInterrupt:
         print('Пока!')
 ask_user()
