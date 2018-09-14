@@ -1,5 +1,5 @@
 def compare_strings(string1, string2):
-    if not isinstance(string1, str) and isinstance(string2, str):
+    if not isinstance(string1, str) or not isinstance(string2, str):
         return 0
     else:
         if string1 == string2:
@@ -9,5 +9,5 @@ def compare_strings(string1, string2):
         elif len(string1) > len(string2):
             return 2
         
-cs = compare_strings('','')
+cs = compare_strings(13,'13')
 print(cs)            
