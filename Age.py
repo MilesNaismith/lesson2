@@ -5,10 +5,11 @@ def what_is_your_duty(age):
         age = int(age)
     except ValueError:
         return 'Требуется ввести число'
-      
-    if age < 7:
+    if age < 0:
+        return 'Вот сначала родись, а потом уже программировать будешь!'      
+    elif age < 7:
         return 'Тебе следует учиться в детском саду'
-    elif age age < 17:
+    elif age < 17:
         return 'Тебе следует учиться в школе'
     elif age < 23:
         return 'Тебе следует учиться в ВУЗе'
